@@ -1,16 +1,22 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Date Format`,
+    description: `Some desc`,
+    author: `Tim and Gleb`,
+    siteUrl: `https://isakjanov.github.io/date-format/`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-react-helmet", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }]
-};
+  plugins: [
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
+      },
+    },
+  ],
+}
 
-export default config;
+export default config
